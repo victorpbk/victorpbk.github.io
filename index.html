@@ -461,6 +461,49 @@
             font-weight: 600;
         }
 
+        .project-video {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            margin-top: 1.75rem;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 212, 255, 0.25);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.1);
+        }
+
+        .project-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.4rem;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.4);
+            border-radius: 6px;
+            color: var(--primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: rgba(0, 255, 136, 0.2);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+            transform: translateY(-2px);
+        }
+
         /* Contact Section */
         .contact-grid {
             display: grid;
@@ -580,11 +623,13 @@
                 <span class="nav-text">Available for Opportunities</span>
             </div>
             <h1>VICTOR BOU-KARIM</h1>
-            <p class="subtitle">Game Developer | Building immersive experiences with Unity & Unreal Engine</p>
+            <p class="subtitle">Designing tools, gameplay systems, and AI behaviors</p>
             <div class="header-tags">
                 <span class="tag">C++</span>
                 <span class="tag">C#</span>
-                <span class="tag">Blueprints</span>
+                <span class="tag">Lua</span>
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
                 <span class="tag">Unity</span>
                 <span class="tag">Unreal Engine</span>
             </div>
@@ -594,7 +639,7 @@
         <section class="stats">
             <div class="stat-card">
                 <div class="stat-label">Experience</div>
-                <div class="stat-value">2 Years</div>
+                <div class="stat-value">3 Years</div>
                 <div class="stat-desc">Professional game development with Unity & Unreal</div>
             </div>
             <div class="stat-card">
@@ -604,20 +649,18 @@
             </div>
             <div class="stat-card">
                 <div class="stat-label">Published Games</div>
-                <div class="stat-value">1+</div>
+                <div class="stat-value">3</div>
                 <div class="stat-desc">Released with 3-person team, zero budget</div>
             </div>
             <div class="stat-card">
                 <div class="stat-label">Specialization</div>
-                <div class="stat-value">Generalist</div>
-                <div class="stat-desc">Gameplay, VFX, SFX, optimization</div>
+                <div class="stat-value">Tools & AI Behavior</div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section class="section">
             <div class="section-header">
-                <div class="section-number">01</div>
                 <h2 class="section-title">Technical Expertise</h2>
             </div>
             <div class="skills-grid">
@@ -633,7 +676,15 @@
                             <span class="skill-level">Proficient</span>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Blueprints</span>
+                            <span class="skill-name">Lua</span>
+                            <span class="skill-level">Proficient</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Proficient</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
                             <span class="skill-level">Proficient</span>
                         </div>
                     </div>
@@ -644,10 +695,18 @@
                     <div class="skill-list">
                         <div class="skill-item">
                             <span class="skill-name">Unity</span>
-                            <span class="skill-level">2 Years</span>
+                            <span class="skill-level">3 Years</span>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Unreal Engine</span>
+                            <span class="skill-level">3 Years</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Roblox Studio</span>
+                            <span class="skill-level">1 Year</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Custom Engine</span>
                             <span class="skill-level">2 Years</span>
                         </div>
                     </div>
@@ -680,12 +739,11 @@
         <!-- Featured Project -->
         <section class="section">
             <div class="section-header">
-                <div class="section-number">02</div>
                 <h2 class="section-title">Featured Project</h2>
             </div>
             <div class="project-highlight">
-                <span class="project-badge">Published Game</span>
-                <h3>The Hike</h3>
+                <span class="project-badge">Unreleased</span>
+                <h3>The Hike | Unreal Engine</h3>
                 <div class="project-meta">
                     <div class="meta-item">
                         <div class="meta-label">Timeline</div>
@@ -701,28 +759,110 @@
                     </div>
                     <div class="meta-item">
                         <div class="meta-label">Status</div>
-                        <div class="meta-value">Published</div>
+                        <div class="meta-value">Unreleased</div>
                     </div>
                 </div>
                 <p class="project-description">
                     An open-world survival crafting game where players navigate hostile environments while facing cryptid enemies. Successfully developed and published from concept to release in just three months with a small team and zero budget. Handled multiple aspects of development including gameplay programming, visual effects implementation, audio integration, and performance optimization across an expansive game world. Demonstrated ability to ship a complete survival experience under tight constraints while maintaining quality standards.
                 </p>
                 <div class="project-tech">
-                    <span class="tech-tag">Open World</span>
-                    <span class="tech-tag">Survival Crafting</span>
                     <span class="tech-tag">Enemy AI</span>
                     <span class="tech-tag">VFX</span>
                     <span class="tech-tag">SFX</span>
                     <span class="tech-tag">Optimization</span>
+                    <span class="tech-tag">Tools</span>
                     <span class="tech-tag">Team Collaboration</span>
                 </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Cw_xHaw7oPI" title="The Hike gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Other Projects</h2>
+            </div>
+            <div class="project-highlight">
+                <span class="project-badge">Published</span>
+                <h3>Irminsul | Unity</h3>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Timeline</div>
+                        <div class="meta-value">2 Months</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Team Size</div>
+                        <div class="meta-value">3 People</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Budget</div>
+                        <div class="meta-value">$100</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Status</div>
+                        <div class="meta-value">Published</div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    A first-person shooter inspired by classic Wolfenstein-era design, set within a fully realized 3D environment depicting a Nazi prison where human and supernatural experimentation take place. Players must fight their way through hostile forces to escape. Developed alongside a two-person team over a two-month production cycle, from initial concept through full release. Directly responsible for level design, enemy design, and AI behavior, in addition to implementing weapon systems and functionality, and building out the stat frameworks governing both player and enemy combat performance.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Level Design</span>
+                    <span class="tech-tag">Enemy Design</span>
+                    <span class="tech-tag">AI Behavior</span>
+                    <span class="tech-tag">Weapon Systems</span>
+                    <span class="tech-tag">Animation</span>
+                    <span class="tech-tag">Team Collaboration</span>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/gAp0etUv5k4" title="Irminsul gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="https://velasqraptor.itch.io/irminsul" target="_blank" class="project-link">🎮 Play Irminsul on itch.io</a>
+            </div>
+
+            <div class="project-highlight">
+                <span class="project-badge">Available</span>
+                <h3>Fall'n Blocks | Custom Engine</h3>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Timeline</div>
+                        <div class="meta-value">Under 1 Month</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Team Size</div>
+                        <div class="meta-value">2-3 People</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Budget</div>
+                        <div class="meta-value">$0</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Status</div>
+                        <div class="meta-value">Available (Installer)</div>
+                    </div>
+                </div>
+                <p class="project-description">
+                    A retro-style puzzle game inspired by classic block-stacking mechanics, built from the ground up on a custom C++ game engine. Reimagines the genre by replacing traditional four-block tetrominoes with five-block pentominoes, adding a fresh layer of spatial challenge. Modeled each piece shape in Blender and implemented a data-driven spawning system, mapping each shape's name to both its geometry and its corresponding color for clean, extensible piece generation.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Custom Engine</span>
+                    <span class="tech-tag">3D Modeling</span>
+                    <span class="tech-tag">Gameplay Systems</span>
+                    <span class="tech-tag">Team Collaboration</span>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/GEkI9LxdARk" title="Fall'n Blocks gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="Fall_n_Blocks.zip" download class="project-link">⬇ Download Fall'n Blocks</a>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section class="section">
             <div class="section-header">
-                <div class="section-number">03</div>
                 <h2 class="section-title">Let's Connect</h2>
             </div>
             <div class="contact-grid">
