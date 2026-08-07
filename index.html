@@ -451,6 +451,57 @@
             gap: 0.5rem;
         }
 
+        .other-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 800px) {
+            .other-projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-highlight.compact {
+            padding: 1.5rem;
+        }
+
+        .project-highlight.compact h3 {
+            font-size: 1.3rem;
+        }
+
+        .project-highlight.compact .project-meta {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .project-highlight.compact .meta-value {
+            font-size: 0.95rem;
+        }
+
+        .project-highlight.compact .project-description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .project-highlight.compact .tech-tag {
+            padding: 0.35rem 0.7rem;
+            font-size: 0.75rem;
+        }
+
+        .project-highlight.compact .project-video {
+            margin-top: 1.25rem;
+        }
+
+        .project-highlight.compact .project-link {
+            margin-top: 1.25rem;
+            padding: 0.55rem 1.1rem;
+            font-size: 0.8rem;
+        }
+
         .tech-tag {
             padding: 0.5rem 1rem;
             background: rgba(0, 212, 255, 0.1);
@@ -784,7 +835,8 @@
             <div class="section-header">
                 <h2 class="section-title">Other Projects</h2>
             </div>
-            <div class="project-highlight">
+            <div class="other-projects-grid">
+            <div class="project-highlight compact">
                 <span class="project-badge">Published</span>
                 <h3>Irminsul | Unity</h3>
                 <div class="project-meta">
@@ -822,7 +874,7 @@
                 <a href="https://velasqraptor.itch.io/irminsul" target="_blank" class="project-link">🎮 Play Irminsul on itch.io</a>
             </div>
 
-            <div class="project-highlight">
+            <div class="project-highlight compact">
                 <span class="project-badge">Available</span>
                 <h3>Fall'n Blocks | Custom Engine</h3>
                 <div class="project-meta">
@@ -857,6 +909,7 @@
                     <iframe src="https://www.youtube.com/embed/GEkI9LxdARk" title="Fall'n Blocks gameplay video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <a href="Fall_n_Blocks.zip" download class="project-link">⬇ Download Fall'n Blocks</a>
+            </div>
             </div>
         </section>
 
